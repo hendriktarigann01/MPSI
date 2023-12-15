@@ -1,0 +1,55 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#wrapper{
+    display: flex;
+}
+
+.navbar{
+    background: linear-gradient(to right, #4e73df, #224abe);
+    width: 400px;
+    height: 100vh;
+    color: #fff;
+}
+
+.navbar .slidebar-brand{
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .slidebar-brand i{
+    font-size: 40px;
+    position: relative;
+}
+
+.navbar .slidebar-brand .namalogo{
+    padding-left: 10px;
+}
+
+.pengertian{
+    padding: 100px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.pengertian h1{
+    text-align: center;
+}
+
+.pengertian {
+    text-align: left;
+}
