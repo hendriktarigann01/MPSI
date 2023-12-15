@@ -1,55 +1,132 @@
-body, h1, h2, h3, p, ul, li {
+body{
+    font-size: 16px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
 }
 
-#wrapper{
+#navbar{
+    background-color: #ff8716;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
+    justify-content: space-between;
 }
 
-.navbar{
-    background: linear-gradient(to right, #4e73df, #224abe);
-    width: 400px;
-    height: 100vh;
-    color: #fff;
-}
-
-.navbar .slidebar-brand{
-    display: flex;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 30px;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
-
-.navbar .slidebar-brand i{
-    font-size: 40px;
-    position: relative;
-}
-
-.navbar .slidebar-brand .namalogo{
-    padding-left: 10px;
-}
-
-.pengertian{
-    padding: 100px;
-    text-align: center;
-    position: relative;
+.menu-bar{
+    margin-top: 30px;
     justify-content: center;
-    box-sizing: border-box;
 }
 
-.pengertian h1{
-    text-align: center;
+#navbar .menu-bar a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.pengertian {
-    text-align: left;
+.menu-bar a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.menu-bar a:hover::after{
+    width: 100%;
+}
+
+/*----------batas-------------*/
+
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 45%;
+}
+
+.about-col-1 img{
+    width: 70%;
+    margin-left: 20vh;
+}
+
+.about-col-2{
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 10px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 80%;
+}
+
+.tab-contents{
+    margin-right: 10vh;
+    line-height: 2;
+}
+.tab-contents li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
 }

@@ -5,31 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANSOS</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div id="wrapper">
-        <div class="navbar">
-            <a class="slidebar-brand" href="index.html">
-                <i class='bx bx-happy-heart-eyes'></i>
-                <div class="namalogo">BANSOS</div>
-            </a>
-        </div>
-
-        <div class="tab-contents" id="pengertian">
-            <h2>APA ITU BANSOS?</h2>
-            <h3>Menurut UU tersebut, bantuan sosial merupakan bantuan berupa uang, barang, atau jasa kepada individu, keluarga, 
-            kelompok atau masyarakat miskin, tidak mampu, dan/atau rentan terhadap risiko sosial.
-            Pengertian ini juga dijelaskan dalam Perpres Nomor 63 Tahun 2017 tentang Penyaluran Bantuan Sosial Secara Non Tunai.
-            </h3>
-        </div>
-
-        <h1>&</h1>
-
-        <div class="tab-contents" id="daftar">
-            <h2>Bagaimana Cara Mendapatkan Bansos?</h2>
-        </div>
+    <div id="navbar">
+        <h1>KBS CILANDAK</h1>
+        <nav class="menu-bar">
+            <a href="">Dashboard</a>
+            <a href="">Data Kependudukan</a>
+            <a href="">Data Kondisi Rumah</a>
+            <a href="">Klasifikasi Penduduk</a>
+            <a href="">Klasifikasi Bantuan</a>
+            <a href="">Login</a>
+        </nav>
     </div>
     
+<!--Batas-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/img/logo-1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Penjelasan Bansos</h1>               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('pengertian')">Pengertian</p>
+                    <p class="tab-links" onclick="opentab('daftar')">Daftar</p>
+                </div>
+                <div class="tab-contents active-tab" id="pengertian">
+                    <li><span>Apa itu Bansos?</span><br>Menurut UU tersebut, bantuan sosial merupakan bantuan berupa uang, barang, atau jasa kepada individu, keluarga, 
+                    kelompok atau masyarakat miskin, tidak mampu, dan/atau rentan terhadap risiko sosial.
+                    Pengertian ini juga dijelaskan dalam Perpres Nomor 63 Tahun 2017 tentang Penyaluran Bantuan Sosial Secara Non Tunai.</li>
+                </div>
+                <div class="tab-contents" id="daftar">
+                    <li><span>Bagaimana Cara Mendapatkan Bansos?</span><br>
+                        1. Login<br>
+                        2. Lengkapi Dokumen dan Isi Form<br>
+                        3. Klik Daftar dan Menunggu Dokumen di verifikasi
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
